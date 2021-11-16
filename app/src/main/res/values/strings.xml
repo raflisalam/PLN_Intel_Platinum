@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Intel Platinum</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home"></string>
+    <string name="ulpKarebosi">ULP karebosi</string>
+    <string name="ulpDaya">ULP daya</string>
+    <string name="tvNamaUser"><font color="#6DC0DF">Selamat Bekerja</font> <b>Raflisalam!</b></string>
+
+    <string-array name="pilihan_tindaklanjut">
+        <item>Pilih tindak lanjut</item>
+        <item>P2TL</item>
+        <item>Ganti KWH Meter</item>
+        <item>Normal</item>
+        <item>Rumah Kosong</item>
+        <item>Rumah Terkunci</item>
+    </string-array>
+</resources>

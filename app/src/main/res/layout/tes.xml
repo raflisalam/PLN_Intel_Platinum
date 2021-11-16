@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/constraintUtama"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_vector_back"
+        android:background="@drawable/button_back"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/primaryColor"
+        android:text="Detail Pelanggan"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        android:layout_marginTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="330dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_heading"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/bg_heading"
+                app:layout_constraintStart_toStartOf="@id/view"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toTopOf="@id/view"
+                app:layout_constraintBottom_toBottomOf="@id/view"/>
+
+            <ImageView
+                android:id="@+id/vector"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:tint="@color/primaryColor"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="@id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/idPelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="382382810002"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                app:layout_constraintStart_toEndOf="@id/view2"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvNamaPelanggan"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Rafli Salam"
+                app:layout_constraintTop_toBottomOf="@id/idPelanggan"
+                app:layout_constraintStart_toStartOf="@id/idPelanggan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <ImageView
+                android:id="@+id/icLocation"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_tagging"
+                app:tint="@color/white"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNamaPelanggan"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvALamatPelanggan"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Jl. Muhammadiyah LR 139B/No.4"
+                app:layout_constraintTop_toTopOf="@id/icLocation"
+                app:layout_constraintBottom_toBottomOf="@id/icLocation"
+                app:layout_constraintStart_toEndOf="@+id/icLocation"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/poppins_bold"/>
+
+
+            <View
+                android:id="@+id/viewTarif"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_vector"
+                app:layout_constraintTop_toBottomOf="@+id/tv2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_tarif"
+                app:layout_constraintTop_toTopOf="@id/viewTarif"
+                app:layout_constraintBottom_toBottomOf="@id/viewTarif"
+                app:layout_constraintStart_toStartOf="@id/viewTarif"
+                app:layout_constraintEnd_toEndOf="@id/viewTarif"/>
+
+            <TextView
+                android:id="@+id/jmlhTarif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#121212"
+                android:text="16500"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintTop_toTopOf="@id/viewTarif"
+                app:layout_constraintBottom_toBottomOf="@id/viewTarif"
+                app:layout_constraintStart_toEndOf="@id/viewTarif"
+                android:layout_marginStart="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarif"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/viewTarif"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                android:layout_marginTop="20dp"/>
+
+
+            <View
+                android:id="@+id/viewDaya"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_vector"
+                app:layout_constraintTop_toBottomOf="@+id/tv3"
+                app:layout_constraintStart_toEndOf="@id/jmlhTarif"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_daya"
+                app:layout_constraintTop_toTopOf="@id/viewDaya"
+                app:layout_constraintBottom_toBottomOf="@id/viewDaya"
+                app:layout_constraintStart_toStartOf="@id/viewDaya"
+                app:layout_constraintEnd_toEndOf="@id/viewDaya"/>
+
+            <TextView
+                android:id="@+id/jmlhDaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#121212"
+                android:text="16500"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintTop_toTopOf="@id/viewDaya"
+                app:layout_constraintBottom_toBottomOf="@id/viewDaya"
+                app:layout_constraintStart_toEndOf="@id/viewDaya"
+                android:layout_marginStart="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daya"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/viewDaya"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                android:layout_marginTop="20dp"/>
+
+            <View
+                android:id="@+id/viewAngkaStand"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_vector"
+                app:layout_constraintTop_toBottomOf="@+id/tv4"
+                app:layout_constraintStart_toEndOf="@id/jmlhDaya"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_angkastand"
+                app:layout_constraintTop_toTopOf="@id/viewAngkaStand"
+                app:layout_constraintBottom_toBottomOf="@id/viewAngkaStand"
+                app:layout_constraintStart_toStartOf="@id/viewAngkaStand"
+                app:layout_constraintEnd_toEndOf="@id/viewAngkaStand"/>
+
+            <TextView
+                android:id="@+id/angkaStand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#121212"
+                android:text="112323"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintTop_toTopOf="@id/viewAngkaStand"
+                app:layout_constraintBottom_toBottomOf="@id/viewAngkaStand"
+                app:layout_constraintStart_toEndOf="@id/viewAngkaStand"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stand Rek"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/viewAngkaStand"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat KWH Meter :"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_bold"
+                app:layout_constraintStart_toStartOf="@id/viewTarif"
+                app:layout_constraintTop_toBottomOf="@id/viewTarif"
+                android:layout_marginTop="15dp"/>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_kwhmeter"
+                android:backgroundTint="#809A9F"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/tv5"/>
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bulan Pertama"
+                android:textSize="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="@id/view3"
+                app:layout_constraintStart_toStartOf="@id/view3"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:id="@+id/riwayatBlnPertama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textSize="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tv6"
+                app:layout_constraintStart_toStartOf="@id/tv6"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="@id/tv6"/>
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bulan Kedua"
+                android:textSize="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="@id/view3"
+                app:layout_constraintStart_toEndOf="@id/tv6"
+                app:layout_constraintEnd_toStartOf="@id/tv8"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:id="@+id/riwayatBlnKedua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textSize="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tv7"
+                app:layout_constraintStart_toStartOf="@id/tv7"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="@id/tv7"/>
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bulan Ketiga"
+                android:textSize="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="@id/view3"
+                app:layout_constraintEnd_toEndOf="@id/view3"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:id="@+id/riwayatBlnKetiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textSize="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tv8"
+                app:layout_constraintStart_toStartOf="@id/tv8"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="@id/tv8"/>
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Note : riwayat 3 bulan terakhir"
+                android:textSize="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/primaryColor"
+                android:layout_marginStart="3dp"
+                app:layout_constraintTop_toBottomOf="@id/view3"
+                app:layout_constraintStart_toStartOf="@id/view3"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indikasi :"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_bold"
+                app:layout_constraintStart_toStartOf="@id/tv9"
+                app:layout_constraintTop_toBottomOf="@id/tv9"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvIndikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STAN DARI PELANGGAN"
+                android:textSize="14sp"
+                android:textColor="#121212"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/tv10"
+                app:layout_constraintTop_toBottomOf="@id/tv10"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Pelanggan:"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/tvIndikasi"
+                app:layout_constraintTop_toBottomOf="@id/tvIndikasi"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tagLokasi"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="https://www.google.com/maps?q=-5.12930047249083,119.407964466401"
+                android:textSize="14sp"
+                android:autoLink="web"
+                android:textColorLink="@color/primaryColor"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/tv11"
+                app:layout_constraintTop_toBottomOf="@id/tv11"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto Meter :"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/tagLokasi"
+                app:layout_constraintTop_toBottomOf="@id/tagLokasi"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/fotoMeter"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="https://portalapp.iconpln.co.id/acmt/DisplayBlobServlet1?idpel=321100020827&amp;blth=202111"
+                android:textSize="14sp"
+                android:textColorLink="@color/primaryColor"
+                android:autoLink="web"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/tv12"
+                app:layout_constraintTop_toBottomOf="@id/tv12"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Foto Rumah :"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/fotoMeter"
+                app:layout_constraintTop_toBottomOf="@id/fotoMeter"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/fotoRumah"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="https://portalapp.iconpln.co.id/acmt/DisplayBlobServlet7?idpel=321100208379&amp;blth="
+                android:textSize="14sp"
+                android:autoLink="web"
+                android:textColorLink="@color/primaryColor"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@id/tv13"
+                app:layout_constraintTop_toBottomOf="@id/tv13"
+                android:layout_marginTop="5dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFloat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/white"
+        android:src="@drawable/ic_plus"
+        app:fabCustomSize="50dp"
+        android:backgroundTint="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnInput"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabCustomSize="50dp"
+        android:visibility="invisible"
+        app:tint="#909090"
+        android:src="@drawable/ic_input"
+        android:backgroundTint="#EFEFF2"
+        app:layout_constraintBottom_toTopOf="@id/btnFloat"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
